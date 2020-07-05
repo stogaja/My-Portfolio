@@ -1,6 +1,6 @@
 # My-Portfolio
 
-![My Portfolio](https://github.com/stogaja/My-Portfolio/blob/master/dist/img/Capture1.PNG)
+![My Portfolio](https://github.com/stogaja/My-Portfolio/blob/gh-pages/dist/img/Capture1.PNG)
 
 # This is my portfolio.
 
