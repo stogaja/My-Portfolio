@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <script src="scroll_reveal/scrollreveal.min.js"></script>
     <title>View My Work</title>
   </head>
 
@@ -110,9 +111,40 @@
     </main>
 
     <footer id="main-footer">
-      Copyright &copy; 2020
+      Copyright &copy; Steve Ogaja 2020
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".lg-heading", {
+        duration: 2000,
+        origin: "left",
+        distance: "300px",
+      });
+      sr.reveal(".text-secondary", {
+        mobile: true,
+        duration: 3000,
+        delay: 2500,
+        origin: "left",
+        distance: "3000px",
+      });
+
+      sr.reveal(".sm-heading", {
+        mobile: true,
+        duration: 3000,
+        delay: 1000,
+        origin: "left",
+        distance: "300px",
+      });
+
+      sr.reveal(".item", {
+        mobile: true,
+        duration: 1000,
+        delay: 2000,
+        origin: "bottom",
+        distance: "300px",
+      });
+    </script>
   </body>
 </html>

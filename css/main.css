@@ -272,6 +272,7 @@ main#home {
 }
 .boxes div:hover span {
   color: #000;
+  transform: scale(0.95);
 }
 
 .btn,

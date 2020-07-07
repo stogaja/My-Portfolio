@@ -12,6 +12,7 @@
     />
 
     <link rel="stylesheet" href="css/main.css" />
+    <script src="scroll_reveal/scrollreveal.min.js"></script>
     <title>Contact | Steve</title>
   </head>
 
@@ -62,7 +63,8 @@
       </h2>
       <div class="boxes">
         <div>
-          <span class="text-secondary">Email: </span> ogajasteve76@gmail.com
+          <span class="text-secondary">Email: </span>
+          ogajasteve76@gmail.com
         </div>
         <div><span class="text-secondary">Phone: </span> (0706) 542-854</div>
         <div><span class="text-secondary">Address: </span> 40601</div>
@@ -70,9 +72,40 @@
     </main>
 
     <footer id="main-footer">
-      Copyright &copy; 2020
+      Copyright &copy; Steve Ogaja 2020
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".lg-heading", {
+        duration: 3000,
+        origin: "left",
+        distance: "300px",
+      });
+      sr.reveal(".text-secondary", {
+        mobile: true,
+        duration: 3000,
+        delay: 2500,
+        origin: "left",
+        distance: "3000px",
+      });
+
+      sr.reveal(".sm-heading", {
+        mobile: true,
+        duration: 3000,
+        delay: 1000,
+        origin: "left",
+        distance: "300px",
+      });
+
+      sr.reveal(".boxes", {
+        mobile: true,
+        duration: 3000,
+        delay: 2000,
+        origin: "bottom",
+        distance: "300px",
+      });
+    </script>
   </body>
 </html>
