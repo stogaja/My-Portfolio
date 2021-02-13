@@ -17,7 +17,7 @@
     <title>View My Work</title>
   </head>
 
-  <body>
+  <body class="body container">
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -121,34 +121,56 @@
 
     <script src="js/main.js"></script>
     <script>
+
+// Prevents window from moving on touch on newer browsers.
+window.addEventListener('touchmove', function (event) {
+  event.preventDefault()
+}, {passive: false});
+
+// Allows content to move on touch.
+document.querySelector('.body-container').addEventListener('touchmove', function (event) {
+  event.stopPropagation()
+}, false);
+
+
+
       window.sr = ScrollReveal();
       sr.reveal(".lg-heading", {
-        duration: 2000,
+        duration: 1000,
         origin: "left",
-        distance: "300px",
+        distance: "100px",
       });
       sr.reveal(".text-secondary", {
         mobile: true,
-        duration: 3000,
-        delay: 2500,
+        duration: 1000,
+        delay: 500,
         origin: "left",
         distance: "3000px",
       });
 
       sr.reveal(".sm-heading", {
         mobile: true,
-        duration: 3000,
-        delay: 1000,
+        duration: 1000,
+        delay: 500,
         origin: "left",
-        distance: "300px",
+        distance: "100px",
       });
 
       sr.reveal(".item", {
         mobile: true,
         duration: 1000,
-        delay: 2000,
-        origin: "bottom",
-        distance: "300px",
+        delay: 600,
+        origin: "left",
+        distance: "100px",
+      });
+
+      sr.reveal("#main-footer",{
+        mobile: true,
+        duration: 1000,
+        delay: 600,
+        origin: "left",
+        distance: "100px",
+
       });
     </script>
   </body>
