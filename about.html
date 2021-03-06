@@ -12,6 +12,7 @@
     />
     <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="scroll_reveal/scrollreveal.min.js"></script>
   </head>
   <body>
     <header>
@@ -73,6 +74,7 @@
           <p>
             I came up with the front end design and layout for the company's
             website and implemented it.
+            <br />
             <a href="https://chickenbasket.netlify.app/index.html"
               >Chicken Basket</a
             >
@@ -84,6 +86,8 @@
           <p>
             I came up with the front end design, layout and backend
             functionality for the church's website and implemented it.
+            <br />
+            <a href="https://ackbondo.netlify.app/index.html">ACK Bondo</a>
           </p>
         </div>
         <!--
@@ -101,5 +105,41 @@
 
     <footer id="main-footer">&copy; 2021 Steve Ogaja</footer>
     <script src="js/main.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".lg-heading", {
+        duration: 1000,
+        origin: "left",
+        distance: "100px",
+      });
+      sr.reveal(".text-secondary", {
+        mobile: true,
+        duration: 1000,
+        delay: 500,
+        origin: "left",
+        distance: "100px",
+      });
+      sr.reveal(".sm-heading", {
+        mobile: true,
+        duration: 1000,
+        delay: 400,
+        origin: "left",
+        distance: "100px",
+      });
+      sr.reveal(".item", {
+        mobile: true,
+        duration: 1000,
+        delay: 500,
+        origin: "left",
+        distance: "100px",
+      });
+      sr.reveal("#main-footer", {
+        mobile: true,
+        duration: 1000,
+        delay: 500,
+        origin: "left",
+        distance: "100px",
+      });
+    </script>
   </body>
 </html>

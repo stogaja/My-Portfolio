@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="scroll_reveal/scrollreveal.min.js"></script>
   </head>
   <body id="bg-img">
     <header>
@@ -52,23 +53,61 @@
 
       <div class="icons">
         <a href="https://twitter.com/home" target="_blank">
-          <i class="fab fa-twitter fa-2x"></i>
-        </a>
-        <a href="https://web.facebook.com/steve.ogaja.9" target="_blank">
-          <i class="fab fa-facebook fa-2x"></i>
+          <i class="fab fa-twitter fa-2x one"></i>
         </a>
         <a
+          class="2"
+          href="https://web.facebook.com/steve.ogaja.9"
+          target="_blank"
+        >
+          <i class="fab fa-facebook fa-2x two"></i>
+        </a>
+        <a
+          class="3"
           href="https://www.linkedin.com/in/stephen-odhiambo-ogaja-1565271a3/"
           target="_blank"
         >
-          <i class="fab fa-linkedin fa-2x"></i>
+          <i class="fab fa-linkedin fa-2x three"></i>
         </a>
-        <a href="https://github.com/stogaja" target="_blank">
-          <i class="fab fa-github fa-2x"></i>
+        <a class="4" href="https://github.com/stogaja" target="_blank">
+          <i class="fab fa-github fa-2x four"></i>
         </a>
       </div>
     </main>
 
     <script src="js/main.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".one", {
+        mobile: true,
+        duration: 150,
+        delay: 150,
+        origin: "bottom",
+        distance: "150px",
+      });
+      sr.reveal(".two", {
+        mobile: true,
+        duration: 250,
+        delay: 250,
+        origin: "bottom",
+        distance: "150px",
+      });
+
+      sr.reveal(".three", {
+        mobile: true,
+        duration: 350,
+        delay: 300,
+        origin: "bottom",
+        distance: "150px",
+      });
+
+      sr.reveal(".four", {
+        mobile: true,
+        duration: 450,
+        delay: 400,
+        origin: "bottom",
+        distance: "150px",
+      });
+    </script>
   </body>
 </html>
