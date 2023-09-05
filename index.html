@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo.png" />
+    <title>Steve's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="scroll_reveal/scrollreveal.min.js"></script>
+  </head>
+  <body id="bg-img">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">How To Reach Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="home">
+      <h1 class="lg-heading">
+        Stephen<span class="text-secondary"> Ogaja</span>
+      </h1>
+      <h2 class="sm-heading">
+        Data Analyst, Cyber Security, Web Developer & Entrepreneur
+      </h2>
+
+      <div class="icons">
+        <a href="https://twitter.com/Mufti254" target="_blank">
+          <i class="fab fa-twitter fa-2x one"></i>
+        </a>
+        <a
+          class="2"
+          href="https://web.facebook.com/steve.ogaja.9"
+          target="_blank"
+        >
+          <i class="fab fa-facebook fa-2x two"></i>
+        </a>
+        <a
+          class="3"
+          href="https://www.linkedin.com/in/stephen-odhiambo-ogaja/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin fa-2x three"></i>
+        </a>
+        <a class="4" href="https://github.com/stogaja" target="_blank">
+          <i class="fab fa-github fa-2x four"></i>
+        </a>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".one", {
+        mobile: true,
+        duration: 150,
+        delay: 150,
+        origin: "bottom",
+        distance: "150px",
+      });
+      sr.reveal(".two", {
+        mobile: true,
+        duration: 250,
+        delay: 250,
+        origin: "bottom",
+        distance: "150px",
+      });
+
+      sr.reveal(".three", {
+        mobile: true,
+        duration: 350,
+        delay: 300,
+        origin: "bottom",
+        distance: "150px",
+      });
+
+      sr.reveal(".four", {
+        mobile: true,
+        duration: 450,
+        delay: 400,
+        origin: "bottom",
+        distance: "150px",
+      });
+    </script>
+  </body>
+</html>
