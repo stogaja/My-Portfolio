@@ -147,6 +147,23 @@ body#bg-img:after {
   background: rgba(68, 68, 68, 0.8);
 }
 
+body#bg-1 {
+  /*background: url(../img/background.jpg);*/
+  background: url("https://source.unsplash.com/1600x900/?programming");
+  background-attachment: fixed;
+  background-size: cover;
+}
+body#bg-1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(68, 68, 68, 0.8);
+}
+
 h1,
 h2,
 h3 {
@@ -218,7 +235,7 @@ main#work-1 {
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
-  height: 80% !important;
+  height: 80%;
   background-size: cover;
   width: 60%;
   border-radius: 50%;
