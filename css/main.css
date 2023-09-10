@@ -28,7 +28,7 @@
 }
 
 .menu {
-  position: fixede;
+  position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.7;
@@ -132,10 +132,28 @@ body {
 }
 body#bg-img {
   background: url(../img/background.jpg);
+  /*background: url("https://source.unsplash.com/1600x900/?programming");*/
   background-attachment: fixed;
   background-size: cover;
 }
 body#bg-img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: rgba(68, 68, 68, 0.8);
+}
+
+body#bg-1 {
+  /*background: url(../img/background.jpg);*/
+  background: url("https://source.unsplash.com/1600x900/?programming");
+  background-attachment: fixed;
+  background-size: cover;
+}
+body#bg-1:after {
   content: "";
   position: absolute;
   top: 0;
@@ -197,9 +215,13 @@ main .icons a:hover {
 }
 main#home {
   overflow: hidden;
-  /*h1 {
-      margin-top: 20vh;
-    }*/
+}
+
+main#work {
+  margin-bottom: 0% !important;
+}
+main#work-1 {
+  padding-top: 0 !important;
 }
 
 .about-info {
@@ -213,9 +235,9 @@ main#home {
 .about-info .bio-image {
   grid-area: bioimage;
   margin: auto;
-  height: 180px;
+  height: 80%;
   background-size: cover;
-  width: 180px;
+  width: 60%;
   border-radius: 50%;
   border: #eece1a 3px solid;
 }
